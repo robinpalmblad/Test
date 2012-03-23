@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+	<LinearLayout android:id="@+id/From"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+		<TextView android:text="From:" 
+		android:id="@+id/TextFrom" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		</TextView>
+
+
+		<RelativeLayout android:id="@+id/FromDate" 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+			<TextView android:text="Date" 
+			android:id="@+id/TextFromDate" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+			</TextView>
+			<Button android:text="Change date" 
+			android:id="@+id/ButtonFromDate" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+			</Button>
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/FromTime" 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+			<TextView android:text="Time" 
+			android:id="@+id/TextFromTime" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+			</TextView>
+			<Button android:text="Change time" 
+			android:id="@+id/ButtonFromTime" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+			</Button>
+		</RelativeLayout>
+	
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/To"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="25dip">
+		<TextView android:text="To" 
+		android:id="@+id/TextTo" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		</TextView>
+
+
+		<RelativeLayout android:id="@+id/ToDate" 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+			<TextView android:text="Date" 
+			android:id="@+id/TextToDate" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+			</TextView>
+			<Button android:text="Change date" 
+			android:id="@+id/ButtonToDate" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+			</Button>
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/ToTime" 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+			<TextView android:text="Time" 
+			android:id="@+id/TextToTime" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true">
+			</TextView>
+			<Button android:text="Change time" 
+			android:id="@+id/ButtonToTime" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+			</Button>
+		</RelativeLayout>
+	
+	</LinearLayout>
+	<RelativeLayout 
+	android:id="@+id/Calculate" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content">
+		<Button android:text="Calculate" 
+		android:id="@+id/ButtonCalculate" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		</Button>
+	</RelativeLayout>
+	<LinearLayout android:id="@+id/Result"
+	android:orientation="vertical" 
+	android:gravity="center"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="25dip">
+		<TextView android:text="ResultCalc" 
+		android:id="@+id/ResultView" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+		</TextView>
+	</LinearLayout>
+</LinearLayout>
